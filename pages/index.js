@@ -142,7 +142,7 @@ const Index = () => {
           <h2 className='text-2xl font-bold pl-3 sm:pl-0  leading-tight text-gray-900 mt-6'>
             Contact Me
           </h2>
-          <div className='mt-4 px-2 sm:px-0'>
+          <div className='mt-2 px-3 sm:px-0'>
             <p className='text-gray-600'>
               Have a question or want to work together?
             </p>
@@ -156,12 +156,12 @@ const Index = () => {
                 onClick={() =>
                   router.push('https://www.linkedin.com/in/irfanalamt/')
                 }
-                className='py-2 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600 mr-4'>
+                className='py-1.5 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600 mr-4'>
                 LinkedIn
               </button>
               <button
                 onClick={() => router.push('https://github.com/irfanalamt')}
-                className='py-2 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600'>
+                className='py-1.5 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600'>
                 Github
               </button>
             </div>
