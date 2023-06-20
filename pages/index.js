@@ -105,8 +105,8 @@ const Index = () => {
             {projects.map((project, index) => (
               <li
                 key={index}
-                className='col-span-1 flex flex-col text-center bg-white rounded-lg shadow  mx-2 sm:mx-0'>
-                <div className='flex-1 flex flex-col py-4 '>
+                className='col-span-1 flex flex-col text-center bg-white rounded-lg shadow mx-2 sm:mx-0 transition duration-200 hover:shadow-lg hover:scale-105'>
+                <div className='flex-1 flex flex-col py-4'>
                   <h3 className='text-gray-900 text-md font-medium'>
                     {project.name}
                   </h3>
@@ -118,7 +118,7 @@ const Index = () => {
                     <dt className='sr-only'>Technologies Used</dt>
                     <dd className='mt-3'>
                       <span className='text-gray-500 text-sm'>Tech Stack:</span>
-                      <ul className=' text-gray-700 text-sm flex justify-center flex-wrap'>
+                      <ul className='text-gray-700 text-sm flex justify-center flex-wrap'>
                         {project.technologies.map((tech, techIndex) => (
                           <li key={techIndex} className='mr-2'>
                             {tech}
@@ -131,13 +131,14 @@ const Index = () => {
                 <div className='flex justify-center pb-4'>
                   <button
                     onClick={() => router.push(project.link)}
-                    className='py-2 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600'>
+                    className='py-2 px-4 rounded-md text-white bg-gray-700 hover:bg-blue-600 transition duration-300'>
                     Open
                   </button>
                 </div>
               </li>
             ))}
           </ul>
+
           <h2 className='text-2xl font-bold pl-3 sm:pl-0  leading-tight text-gray-900 mt-6'>
             Contact Me
           </h2>
