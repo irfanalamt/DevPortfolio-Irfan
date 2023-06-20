@@ -118,7 +118,7 @@ const Index = () => {
                     <dt className='sr-only'>Technologies Used</dt>
                     <dd className='mt-3'>
                       <span className='text-gray-500 text-sm'>Tech Stack:</span>
-                      <ul className=' text-gray-700 text-sm flex justify-center'>
+                      <ul className=' text-gray-700 text-sm flex justify-center flex-wrap'>
                         {project.technologies.map((tech, techIndex) => (
                           <li key={techIndex} className='mr-2'>
                             {tech}
