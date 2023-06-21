@@ -69,9 +69,10 @@ const Index = () => {
             {`Hi, I'm Irfan. 👋🏽`}
           </h1>
           <p className='mt-1 max-w-2xl  text-sm lg:text-lg text-gray-500'>
-            Full-stack developer specializing in front-end design, creating
-            user-friendly interfaces with a focus on simplicity. Strong computer
-            science background and extensive knowledge in cloud technologies.
+            Full-stack developer with a fondness for the front-end of the stack,
+            crafting user-friendly interfaces with a focus on simplicity.
+            Possesses a strong computer science background and extensive
+            knowledge in cloud technologies.
           </p>
         </div>
       </header>
