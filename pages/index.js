@@ -62,17 +62,16 @@ const Index = () => {
   ];
 
   return (
-    <div className='font-sans antialiased text-gray-900 bg-gray-100 min-h-screen flex flex-col'>
-      <header className='py-6 bg-white shadow'>
+    <div className='font-sans antialiased text-gray-900 bg-slate-100 min-h-screen flex flex-col'>
+      <header className='py-6 bg-gray-50 shadow'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <h1 className='text-3xl font-bold leading-tight text-gray-900'>
             {`Hi, I'm Irfan. 👋🏽`}
           </h1>
           <p className='mt-1 max-w-2xl  text-sm lg:text-lg text-gray-500'>
-            Full-stack developer with a fondness for the front-end of the stack,
-            crafting user-friendly interfaces with a focus on simplicity.
-            Possesses a strong computer science background and extensive
-            knowledge in cloud technologies.
+            As a Full Stack Developer, I use coding and design to create smooth
+            online experiences. My mission? To build responsive, scalable, and
+            user-centric applications.
           </p>
         </div>
       </header>
@@ -132,7 +131,7 @@ const Index = () => {
                 <div className='flex justify-center pb-4'>
                   <button
                     onClick={() => router.push(project.link)}
-                    className='py-2 px-4 rounded-md text-white bg-gray-700 hover:bg-blue-600 transition duration-300'>
+                    className='py-2 px-4 rounded-md text-white bg-indigo-500 hover:bg-indigo-600 transition duration-300'>
                     Open
                   </button>
                 </div>
@@ -157,12 +156,12 @@ const Index = () => {
                 onClick={() =>
                   router.push('https://www.linkedin.com/in/irfanalamt/')
                 }
-                className='py-1.5 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600 mr-4'>
+                className='py-1.5 px-4  rounded-md  text-white bg-indigo-500 hover:bg-indigo-600 mr-4'>
                 LinkedIn
               </button>
               <button
                 onClick={() => router.push('https://github.com/irfanalamt')}
-                className='py-1.5 px-4  rounded-md  text-white bg-gray-700 hover:bg-blue-600'>
+                className='py-1.5 px-4  rounded-md  text-white bg-indigo-500 hover:bg-indigo-600'>
                 Github
               </button>
             </div>
