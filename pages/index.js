@@ -69,9 +69,10 @@ const Index = () => {
             {`Hi, I'm Irfan. 👋🏽`}
           </h1>
           <p className='mt-1 max-w-2xl  text-sm lg:text-lg text-gray-500'>
-            As a Full Stack Developer, I use coding and design to create smooth
-            online experiences. My mission? To build responsive, scalable, and
-            user-centric applications.
+            A Full Stack Developer with specialization in cloud computing,
+            graphical tool and workflow development. My expertise spans across
+            diverse technologies and programming languages including Node.js,
+            React.js and more.
           </p>
         </div>
       </header>
@@ -144,7 +145,8 @@ const Index = () => {
           </h2>
           <div className='mt-2 px-3 sm:px-0'>
             <p className='text-gray-600'>
-              Have a question or want to work together?
+              Eager to leverage my skills for mutual growth at a dynamic
+              organization. Reach out if my profile aligns with an opportunity.
             </p>
             <a
               href='mailto:irfanalamt@gmail.com'
