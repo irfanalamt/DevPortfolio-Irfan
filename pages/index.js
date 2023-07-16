@@ -59,6 +59,19 @@ const Index = () => {
       ],
       link: 'https://github.com/irfanalamt/trending-words-API',
     },
+    {
+      name: 'Intelligent Web Chat Interface',
+      description:
+        'Web-based chat interface that utilizes advanced NLP for facilitating interactions with users via both bots and live agents. It offers real-time chat functionality and intent-based agent routing, designed to be easily embeddable on any client website.',
+      technologies: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'Socket.io',
+        'NLP.js',
+      ],
+      link: 'https://github.com/irfanalamt/bot-assisted-chat',
+    },
   ];
 
   return (
@@ -70,9 +83,9 @@ const Index = () => {
           </h1>
           <p className='mt-1 max-w-2xl  text-sm lg:text-lg text-gray-500'>
             A Full Stack Developer with specialization in cloud computing,
-            graphical tool and workflow development. My expertise spans across
-            diverse technologies and programming languages including Node.js,
-            React.js and more.
+            graphical tool and workflow development. My expertise covers a wide
+            range of technologies and programming languages, with a particular
+            proficiency in React.js and Node.js.
           </p>
         </div>
       </header>
@@ -99,37 +112,38 @@ const Index = () => {
               </li>
             ))}
           </ul>
-          <h2 className='text-2xl font-bold pl-3 sm:pl-0  leading-tight text-gray-900 mt-6'>
+          <h2 className='text-2xl font-bold pl-3 sm:pl-0  leading-tight text-gray-900 mt-6 '>
             Projects
           </h2>
-          <ul className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4'>
+          <ul className='grid grid-cols-1 gap-6 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3  mt-4'>
             {projects.map((project, index) => (
               <li
                 key={index}
-                className='col-span-1 flex flex-col text-center bg-white rounded-lg shadow mx-2 sm:mx-0 transition duration-200 hover:shadow-lg hover:scale-105'>
-                <div className='flex-1 flex flex-col py-4'>
-                  <h3 className='text-gray-900 text-md font-medium'>
-                    {project.name}
-                  </h3>
-                  <dl className='p-2 flex-grow flex flex-col justify-between'>
-                    <dt className='sr-only'>Description</dt>
-                    <dd className='text-gray-500 text-sm'>
-                      {project.description}
-                    </dd>
-                    <dt className='sr-only'>Technologies Used</dt>
-                    <dd className='mt-3'>
-                      <span className='text-gray-500 text-sm'>Tech Stack:</span>
-                      <ul className='text-gray-700 text-sm flex justify-center flex-wrap'>
-                        {project.technologies.map((tech, techIndex) => (
-                          <li key={techIndex} className='mr-2'>
-                            {tech}
-                          </li>
-                        ))}
-                      </ul>
-                    </dd>
-                  </dl>
-                </div>
-                <div className='flex justify-center pb-4'>
+                className='col-span-1 flex flex-col p-4 bg-white rounded-lg shadow-md transition-transform transform hover:-translate-y-1 max-w-lg  mx-auto
+                '>
+                <h3 className='text-gray-800 text-md font-medium mb-2'>
+                  {project.name}
+                </h3>
+                <dl className='flex-grow flex flex-col justify-between'>
+                  <dt className='sr-only'>Description</dt>
+                  <dd className='text-gray-600 text-sm'>
+                    {project.description}
+                  </dd>
+                  <dt className='sr-only'>Technologies Used</dt>
+                  <dd className='mt-3'>
+                    <div className='text-gray-600 text-sm text-center'>
+                      Tech Stack:
+                    </div>
+                    <ul className='text-gray-700 text-sm flex justify-center flex-wrap mt-1'>
+                      {project.technologies.map((tech, techIndex) => (
+                        <li key={techIndex} className='mr-2'>
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
+                </dl>
+                <div className='mt-3 flex justify-center'>
                   <button
                     onClick={() => router.push(project.link)}
                     className='py-2 px-4 rounded-md text-white bg-indigo-500 hover:bg-indigo-600 transition duration-300'>
